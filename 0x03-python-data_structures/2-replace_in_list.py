@@ -2,13 +2,13 @@
 
 
 def replace_in_list(my_list, idx, element):
-    new_list = (my_list.insert(-2, (new_element)))
-    del my_list[-2]
     if idx < 0:
         return my_list
     elif idx >= len(my_list):
         return my_list
     else:
+        new_list = (my_list.insert(-2, (new_element)))
+        del my_list[-2]
         return my_list
 
 
