@@ -2,6 +2,18 @@
 
 
 def uniq_add(my_list=[]):
-    uniq_add = set(my_list)
-    result = sum(uniq_add)
-    print("Result: {:g}".format(result))
+    unique_integers = set()
+
+    for num in my_list:
+        if num not in unique_integers:
+            unique_integers.add(num)
+
+    sum_unique = sum(unique_integers)
+
+    return sum_unique
+
+
+if __name__ == "__main__":
+    my_list = [1, 2, 3, 1, 4, 2, 5]
+    result = uniq_add(my_list)
+    print("Result: {:d}".format(result))
