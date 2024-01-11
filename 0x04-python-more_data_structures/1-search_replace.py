@@ -2,9 +2,8 @@
 
 
 def search_replace(my_list, search, replace):
-    for index in range(len(my_list)):
-        if my_list[index] == search:
-            my_list[index] = replace
+    new_list = [replace if item == search else item for item in my_list]
+    return new_list
 
 
 if __name__ == "__main__":
