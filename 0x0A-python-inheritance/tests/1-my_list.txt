@@ -1,5 +1,4 @@
-===========================
-How to Use 1-my_list.py
+The ``1-list`` module
 ===========================
 This class: Write a class MyList that inherits from list:
             Public instance method: def print_sorted(self): that prints the list, but sorted (ascending sort)
