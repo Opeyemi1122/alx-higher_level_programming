@@ -3,10 +3,11 @@
 print_sorted: function to be called"""
 
 
-def print_sorted(self):
+class MyList(list):
     """
-    a class MyList that inherits from list
-    """
-    sorted_list = sorted(self)
-    print(sorted_list)
-    return sorted_list
+    a subclass of list that init and sort the list"""
+    def __init__(self):
+        super().__init__()
+
+    def print_sorted(self):
+        print(sorted(self))
