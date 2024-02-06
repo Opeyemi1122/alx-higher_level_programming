@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-BaseGeometry = __import__('7-base_geometry').BaseGeometry
-# from BaseGeometry import 7-base_geometry.BaseGeometry
 """represents a rectangle using geometry"""
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
