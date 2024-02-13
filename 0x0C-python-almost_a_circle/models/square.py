@@ -33,6 +33,7 @@ class Square(Rectangle):
         if args:
             attrs = ["id", "size", "x", "y"]
             for index, arg in enumerate(args):
+                """enumerates over each args"""
                 setattr(self, attrs[index], arg)
         else:
             for key, value in kwargs.items():
@@ -42,3 +43,7 @@ class Square(Rectangle):
         """Return the print() and str() representation of a Square."""
         return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y,
                                                  self.width)
+
+    def to_dictionary(self):
+        """ Dictionary representation of the Square """
+        return {'id': self.id, 'size': self.size, 'x': self.x, 'y': self.y}
