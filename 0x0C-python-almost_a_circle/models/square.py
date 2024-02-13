@@ -10,12 +10,11 @@ class Square(Rectangle):
         """initializes the square
 
         Args:
-        size = size of the new square
-        x = x coordinate of new square
-        y = y coordinate of the new square
-        id = identity of the new square
+            size = size of the new square
+            x = x coordinate of new square
+            y = y coordinate of the new square
+            id = identity of the new square
         """
-
         super().__init__(size, size, x, y, id)
 
     @property
@@ -28,3 +27,8 @@ class Square(Rectangle):
         """defines the setter of the square class"""
         self.width = value
         self.height = value
+
+    def __str__(self):
+        """Return the print() and str() representation of a Square."""
+        return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y,
+                                                 self.width)
